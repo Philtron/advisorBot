@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>start</pattern>
+	    <template>
+	        Hello, I am the WGU Career Advisor Bot. Would you like to answer a 
+	        few questions to get my personalized career recommendation?
+	        <reply>
+	            <text>Yes</text>
+	            <postback>CLICKYES</postback>
+            </reply>
+            <reply>
+	            <text>No</text>
+	            <postback>CLICKNO</postback>
+            </reply>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>restart</pattern>
+        <template>
+	        Hello, I am the WGU Career Advisor Bot. Would you like to answer a 
+	        few questions to get my personalized career recommendation?
+	        <reply>
+	            <text>Yes</text>
+	            <postback>CLICKYES</postback>
+            </reply>
+            <reply>
+	            <text>No</text>
+	            <postback>CLICKNO</postback>
+            </reply>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>CLICKNO</pattern>
+        <template>
+            All right, if you change your mind please type "Restart." Good luck!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CLICKYES</pattern>
+        <template>
+            Excellent! Lets begin.<br></br><br></br>
+            <b>First Question:</b> Do you prefer Coding 
+            or Designing more?
+            <reply>
+	            <text>Coding</text>
+	            <postback>CODING</postback>
+            </reply>
+            <reply>
+	            <text>Designing</text>
+	            <postback>DESIGNING</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CODING</pattern>
+        <template>
+            You've indicated you prefer Coding over Designing!<br></br><br></br>
+            <b>Second Question:</b> Would you prefer to work on websites, or applications?
+            <reply>
+	            <text>Websites</text>
+	            <postback>WEBSITES</postback>
+            </reply>
+            <reply>
+	            <text>Applications</text>
+	            <postback>APPLICATIONS</postback>
+            </reply>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>APPLICATIONS</pattern>
+        <template>
+            You've indicated you prefer to work on Applications over Websites!
+            <br></br><br></br>
+            I recommend you look into Software Developer jobs!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DESIGNING</pattern>
+        <template>
+            You've indicated you prefer Designing over Coding!<br></br><br></br>
+            <b>Second Question:</b> Would you prefer to design systems or Graphical
+             User Interfaces (GUIs)?
+            <reply>
+	            <text>Systems</text>
+	            <postback>SYSTEMS</postback>
+            </reply>
+            <reply>
+	            <text>GUIs</text>
+	            <postback>GUIS</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Systems</pattern>
+        <template>
+            Based off your selections, I recommend Software Engineering jobs!
+        </template>
+    </category>
+    
+        <category>
+        <pattern>GUIS</pattern>
+        <template>
+            Based off your selections, I recommend UX Designer Jobs!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WEBSITES</pattern>
+        <template>
+            You've indicated you prefer to work on Websites over Applications!
+            <br></br><br></br>
+            <b>Third Question:</b> Would you prefer to work on what people see (front end), 
+            or the logic behind the scenes (back end)?
+            <reply>
+	            <text>Front End</text>
+	            <postback>FRONTEND</postback>
+            </reply>
+            <reply>
+	            <text>Back End</text>
+	            <postback>BACKEND</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>FRONTEND</pattern>
+        <template>
+            Based on your responses, I recommend you look into Front End 
+            Web Developer jobs!
+            <br></br><br></br>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>BACKEND</pattern>
+        <template>
+            Based on your responses, I recommend you look into Back End 
+            Web Developer jobs!
+            <br></br><br></br>
+        </template>
+    </category>
+    
+</aiml>
