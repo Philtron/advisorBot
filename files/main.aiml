@@ -78,7 +78,9 @@
         <template>
             You've indicated you prefer to work on Applications over Websites!
             <br></br><br></br>
-            I recommend you look into Software Developer jobs!
+            I recommend you look into Software Developer jobs!<br></br>
+            Software Developer jobs will utilize your love of coding applications
+            over design.
         </template>
     </category>
     
@@ -86,7 +88,7 @@
         <pattern>DESIGNING</pattern>
         <template>
             You've indicated you prefer Designing over Coding!<br></br><br></br>
-            <b>Second Question:</b> Would you prefer to design systems or Graphical
+            <b>Second Question:</b> Would you prefer to design Programs or Graphical
              User Interfaces (GUIs)?
             <reply>
 	            <text>Systems</text>
@@ -102,14 +104,16 @@
     <category>
         <pattern>Systems</pattern>
         <template>
-            Based off your selections, I recommend Software Engineering jobs!
+            Based off your selections, I recommend Software Engineering jobs!<br></br>
+            Software Engineering will utilize your love of designing systems over coding.
         </template>
     </category>
     
         <category>
         <pattern>GUIS</pattern>
         <template>
-            Based off your selections, I recommend UX Designer Jobs!
+            Based off your selections, I recommend UX Designer Jobs!<br></br>
+            UX designer jobs will utilize your love of design over coding.
         </template>
     </category>
     
@@ -135,7 +139,9 @@
         <pattern>FRONTEND</pattern>
         <template>
             Based on your responses, I recommend you look into Front End 
-            Web Developer jobs!
+            Web Developer jobs! <br></br>
+            Front end web development jobs will make use of your enjoyment of coding over
+            design. 
             <br></br><br></br>
         </template>
     </category>
@@ -144,7 +150,9 @@
         <pattern>BACKEND</pattern>
         <template>
             Based on your responses, I recommend you look into Back End 
-            Web Developer jobs!
+            Web Developer jobs!<br></br>
+            Back end web development jobs will make use of your enjoyment of coding over
+            design. 
             <br></br><br></br>
         </template>
     </category>
